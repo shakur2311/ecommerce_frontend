@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- navegacion -->
+    <section class="navegacion">
+        <nav class="navbar navbar-expand-md main-menu fixed" style="box-shadow:none">
+            <div class="container">
+              <a href="./index.html" class="logo" style="width:100px;">
+                <img src="assets/images/keyboard.png" alt="keyboard-logo" width="100%">
+              </a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <!-- navbar default -->
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <form class="d-flex my-2 w-50 mx-auto">
+                  <input class="form-control" type="search" placeholder="Buscar producto..." aria-label="Search">
+                  <button class="btn btn-search my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+          
+                <div class="navbar-icons justify-content-center">
+                    <a href=""><i class="fa fa-user"></i></a>
+                    <a href=""><i class="fa fa-heart"></i></a>
+                    <a href="./cart.html"><i class="fa fa-cart-shopping"></i></a>
+                    
+                </div>
+              </div>
+          
+            </div>
+          </nav> 
+    </section>
+    
+    <!-- slider principal -->
+    <section class="hero">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/images/teclado1-hero.png" class="d-block w-100" alt="..." style="height: 100%;">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/teclado2-hero.png" class="d-block w-100" alt="..." style="height: 100%;">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/teclado3-hero.png" class="d-block w-100" alt="..." style="height: 100%;">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- beneficios -->
+    <section class="beneficios mt-5">
+        <div class="container">
+            <div class="row shadow p-3">
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-around">
+                    <div class="beneficio-icono">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div class="beneficio-texto">
+                        <h5>Envio Gratis</h5>
+                        <p>A cualquier parte de Lima</p>
+                    </div>             
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-around">
+                    <div class="beneficio-icono">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+                    <div class="beneficio-texto">
+                        <h5>Precios</h5>
+                        <p>Comodidad en precios</p>
+                    </div>             
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-around">
+                    <div class="beneficio-icono">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <div class="beneficio-texto">
+                        <h5>Métodos de pago</h5>
+                        <p>Variedad en métodos de pago</p>
+                    </div>             
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-around">
+                    <div class="beneficio-icono">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div class="beneficio-texto">
+                        <h5>Calidad</h5>
+                        <p>Productos con calidad</p>
+                    </div>             
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- categorias de teclados desktop-->
+    <section class="categories mt-5 ">
+        <div class="container">
+            <h4 class="text-center mb-5">Categorias</h4>
+            <div id="carouselCategories" class="carousel slide" data-bs-touch="false">
+                <div class="carousel-inner" >
+                  <div class="carousel-item active" >
+                    <div class="row">
+                        <div class="col-3">
+                            <a href="./products.html">
+                              <div class="card">
+                                <img src="assets/images/categorias/categoria-ergonomico.png" alt="">
+                                <h4 class="card-title">Teclados Ergonómicos</h4>
+                              </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="./products.html">
+                              <div class="card">
+                                <img src="assets/images/categorias/categoria-gamer.png" alt="">
+                                <h4 class="card-title">Teclados Gamers</h4>
+                              </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="./products.html">
+                              <div class="card">
+                                <img src="assets/images/categorias/categoria-flexible.png" alt="">
+                                <h4 class="card-title">Teclados Flex</h4>
+                              </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="./products.html">
+                              <div class="card">
+                                <img src="assets/images/categorias/categoria-mini.png" alt="">
+                                <h4 class="card-title">Teclados Mini</h4>
+                              </div>
+                            </a>
+                        </div>     
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-3">
+                            <a href="./products.html">
+                              <div class="card">
+                                <img src="assets/images/categorias/categoria-gamer-razer.png" alt="">
+                                <h4 class="card-title">Teclados Mecánicos</h4>
+                              </div>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="./products.html">
+                              <div class="card">
+                                <img src="assets/images/categorias/categoria-oficina.png" alt="">
+                                <h4 class="card-title">Teclados para oficina</h4>
+                              </div>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCategories" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCategories" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- categorias de teclados responsive -->
+    <section class="categories-responsive mt-5">
+      <div class="container">
+        <h4 class="text-center mb-5">Categorias</h4>
+        <div id="carouselCategories-responsive" class="carousel slide" data-bs-touch="false">
+            <div class="carousel-inner" >
+              <div class="carousel-item active">
+                <a href="./products.html">
+                  <div class="card">
+                    <img src="assets/images/categorias/categoria-ergonomico.png" alt="">
+                    <h4 class="card-title">Teclados Ergonómicos</h4>
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="./products.html">
+                  <div class="card">
+                    <img src="assets/images/categorias/categoria-gamer.png" alt="">
+                    <h4 class="card-title">Teclados Gamers</h4>
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="./products.html">
+                  <div class="card">
+                    <img src="assets/images/categorias/categoria-flexible.png" alt="">
+                    <h4 class="card-title">Teclados Flex</h4>
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="./products.html">
+                  <div class="card">
+                    <img src="assets/images/categorias/categoria-mini.png" alt="">
+                    <h4 class="card-title">Teclados Mini</h4>
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="./products.html">
+                  <div class="card">
+                    <img src="assets/images/categorias/categoria-gamer-razer.png" alt="">
+                    <h4 class="card-title">Teclados Mecánicos</h4>
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="./products.html">
+                  <div class="card">
+                    <img src="assets/images/categorias/categoria-oficina.png" alt="">
+                    <h4 class="card-title">Teclados para oficina</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCategories-responsive" data-bs-slide="prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCategories-responsive" data-bs-slide="next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- cuenta regresiva ofertas -->
+    <section class="countdown-offers my-5">
+        <div class="container">
+            <div class="countdown d-flex">
+                <div class="row mb-3">
+                  <h4>Las ofertas acaban en..</h4>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-2">
+                      <h1 id="days">00</h1>
+                      <h3>dias</h3>
+                    </div>
+                    <div class="col-1">
+                      <h1>:</h1>
+                    </div>
+                    <div class="col-2">
+                      <h1 id="hours">00</h1>
+                      <h3>horas</h3>
+                    </div>
+                    <div class="col-1">
+                      <h1>:</h1>
+                    </div>
+                    <div class="col-2">
+                      <h1 id="minutes">00</h1>
+                      <h3>min</h3>
+                    </div>
+                    <div class="col-1">
+                      <h1>:</h1>
+                    </div>
+                    <div class="col-2">
+                      <h1 id="seconds">00</h1>
+                      <h3>segds</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- productos populares -->
+    <section class="popular-products my-5">
+      <div class="container">
+        <div class="row">
+          <h4 class="text-center">Productos Populares</h4>
+          <div id="carouselPopularProducts" class="carousel slide" data-bs-touch="false" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner" >
+              <div class="carousel-item active" >
+                <div class="row">
+                    <div class="col-2">
+                        <div class="card">
+                            <a href="./product.html">
+                              <img src="assets/images/productos-populares/productoPopular-ergonomico1.png" alt="">
+                              <p class="card-title">Teclado Ergonómico Microsoft Multimedia</p>
+                              <div class="estrellas my-3 d-flex justify-content-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                              </div>
+                              <div class="row justify-content-center">
+                                <div class="col-6 ex-precio"><del>$30</del></div>
+                                <div class="col-6 precio">$27</div>
+                              </div>
+                            </a>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <a href="./product.html">
+                              <img src="assets/images/productos-populares/productoPopular-gamer1.png" alt="">
+                              <p class="card-title">Teclado Gamer Spectra Zk-p015</p>
+                              <div class="estrellas my-3 d-flex justify-content-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="row justify-content-center">
+                                <div class="col-6 ex-precio"><del>$30</del></div>
+                                <div class="col-6 precio">$27</div>
+                              </div>
+                            </a>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <a href="./product.html">
+                              <img src="assets/images/productos-populares/productoPopular-flex1.png" alt="">
+                              <p class="card-title">Black Silicone Portable Flexible Keyboard</p>
+                              <div class="estrellas my-3 d-flex justify-content-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="row justify-content-center">
+                                <div class="col-6 ex-precio"><del>$30</del></div>
+                                <div class="col-6 precio">$27</div>
+                              </div>
+                            </a>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <a href="./product.html">
+                              <img src="assets/images/productos-populares/productoPopular-ergonomico2.png" alt="">
+                              <p class="card-title">Kensington Teclado Ergonómico Inalámbrico</p>
+                              <div class="estrellas my-3 d-flex justify-content-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                              <div class="row justify-content-center">
+                                <div class="col-6 ex-precio"><del>$30</del></div>
+                                <div class="col-6 precio">$27</div>
+                              </div>
+                            </a>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                        </div>
+                    </div>     
+                    <div class="col-2">
+                      <div class="card">
+                          <a href="./product.html">
+                            <img src="assets/images/productos-populares/productoPopular-mecanico1.png" alt="">
+                            <p class="card-title">Teclado Razer BlackWidow V3</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                          </a>
+                          <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                      </div>
+                    </div> 
+                    <div class="col-2">
+                      <div class="card">
+                          <a href="./product.html">
+                            <img src="assets/images/productos-populares/productoPopular-mecanico2.png" alt="">
+                            <p class="card-title">Teclado Gamer Halion Barbarian HA-K655</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                              <i class="fa-regular fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                          </a>
+                          <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                      </div>
+                    </div> 
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="card">
+                            <a href="./product.html">
+                              <img src="assets/images/productos-populares/productoPopular-mini1.png" alt="">
+                              <p class="card-title">Teclado Razer Tartarus Pro Gaming Keypad</p>
+                              <div class="estrellas my-3 d-flex justify-content-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="row justify-content-center">
+                                <div class="col-6 ex-precio"><del>$30</del></div>
+                                <div class="col-6 precio">$27</div>
+                              </div>
+                            </a>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <a href="./product.html">
+                              <img src="assets/images/productos-populares/productoPopular-oficina1.png" alt="">
+                              <p class="card-title">Teclado Genius KB125  Negro</p>
+                              <div class="estrellas my-3 d-flex justify-content-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="row justify-content-center">
+                                <div class="col-6 ex-precio"><del>$30</del></div>
+                                <div class="col-6 precio">$27</div>
+                              </div>
+                            </a>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card">
+                          <a href="./product.html">
+                            <img src="assets/images/productos-populares/productoPopular-mecanico3.png" alt="">
+                            <p class="card-title">Teclado Logitech G613 Wireless</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                          </a>
+                          <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card">
+                          <a href="./product.html">
+                            <img src="assets/images/productos-populares/productoPopular-mini2.png" alt="">
+                            <p class="card-title">Teclado OneHand Ligero k7 RGB</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                          </a>
+                          <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card">
+                          <a href="./product.html">
+                            <img src="assets/images/productos-populares/productoPopular-mecanico4.png" alt="">
+                            <p class="card-title">Teclado Redragon K552 Kumara</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                          </a>
+                          <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card">
+                          <a href="./product.html">
+                            <img src="assets/images/productos-populares/productoPopular-mecanico5.png" alt="">
+                            <p class="card-title">Teclado HyperX Alloy Elite</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                          </a>
+                          <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPopularProducts" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPopularProducts" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- productos populares responsive -->
+    <section class="popular-products-responsive my-5">
+      <div class="container">
+        <h4 class="text-center mb-5">Productos Populares</h4>
+        <div id="carouselPopularProducts-responsive" class="carousel slide" data-bs-touch="false"  data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-inner" >
+            <div class="carousel-item active" >
+              <div class="card">
+                <a href="./product.html">
+                  <img src="assets/images/productos-populares/productoPopular-ergonomico1.png" alt="">
+                  <p class="card-title">Teclado Ergonómico Microsoft Multimedia</p>
+                  <div class="estrellas my-3 d-flex justify-content-center">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-6 ex-precio"><del>$30</del></div>
+                    <div class="col-6 precio">$27</div>
+                  </div>
+                </a>
+                <button class="btn addCartButton mt-3">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <a href="./product.html">
+                  <img src="assets/images/productos-populares/productoPopular-gamer1.png" alt="">
+                  <p class="card-title">Teclado Gamer Spectra Zk-p015</p>
+                  <div class="estrellas my-3 d-flex justify-content-center">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-6 ex-precio"><del>$30</del></div>
+                    <div class="col-6 precio">$27</div>
+                  </div>
+                </a>
+                <button class="btn addCartButton mt-3">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <a href="./product.html">
+                  <img src="assets/images/productos-populares/productoPopular-flex1.png" alt="">
+                  <p class="card-title">Black Silicone Portable Flexible Keyboard</p>
+                  <div class="estrellas my-3 d-flex justify-content-center">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-6 ex-precio"><del>$30</del></div>
+                    <div class="col-6 precio">$27</div>
+                  </div>
+                </a>
+                <button class="btn addCartButton mt-3">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <a href="./product.html">
+                  <img src="assets/images/productos-populares/productoPopular-ergonomico2.png" alt="">
+                  <p class="card-title">Kensington Teclado Ergonómico Inalámbrico</p>
+                  <div class="estrellas my-3 d-flex justify-content-center">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-6 ex-precio"><del>$30</del></div>
+                    <div class="col-6 precio">$27</div>
+                  </div>
+                </a>
+                <button class="btn addCartButton mt-3">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <a href="./product.html">
+                  <img src="assets/images/productos-populares/productoPopular-mecanico1.png" alt="">
+                  <p class="card-title">Teclado Razer BlackWidow V3</p>
+                  <div class="estrellas my-3 d-flex justify-content-center">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-6 ex-precio"><del>$30</del></div>
+                    <div class="col-6 precio">$27</div>
+                  </div>
+                </a>
+                <button class="btn addCartButton mt-3">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <a href="./product.html">
+                  <img src="assets/images/productos-populares/productoPopular-mecanico2.png" alt="">
+                  <p class="card-title">Teclado Gamer Halion Barbarian HA-K655</p>
+                  <div class="estrellas my-3 d-flex justify-content-center">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-6 ex-precio"><del>$30</del></div>
+                    <div class="col-6 precio">$27</div>
+                  </div>
+                </a>
+                <button class="btn addCartButton mt-3">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <a href="./product.html">
+                  <img src="assets/images/productos-populares/productoPopular-mini1.png" alt="">
+                  <p class="card-title">Teclado Razer Tartarus Pro Gaming Keypad</p>
+                  <div class="estrellas my-3 d-flex justify-content-center">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-6 ex-precio"><del>$30</del></div>
+                    <div class="col-6 precio">$27</div>
+                  </div>
+                </a>
+                <button class="btn addCartButton mt-3">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <a href="./product.html">
+                  <img src="assets/images/productos-populares/productoPopular-oficina1.png" alt="">
+                  <p class="card-title">Teclado Genius KB125  Negro</p>
+                  <div class="estrellas my-3 d-flex justify-content-center">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-6 ex-precio"><del>$30</del></div>
+                    <div class="col-6 precio">$27</div>
+                  </div>
+                </a>
+                <button class="btn addCartButton mt-3">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <a href="./product.html">
+                  <img src="assets/images/productos-populares/productoPopular-mecanico3.png" alt="">
+                  <p class="card-title">Teclado Logitech G613 Wireless</p>
+                  <div class="estrellas my-3 d-flex justify-content-center">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-6 ex-precio"><del>$30</del></div>
+                    <div class="col-6 precio">$27</div>
+                  </div>
+                </a>
+                <button class="btn addCartButton mt-3">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <a href="./product.html">
+                  <img src="assets/images/productos-populares/productoPopular-mini2.png" alt="">
+                  <p class="card-title">Teclado OneHand Ligero k7 RGB</p>
+                  <div class="estrellas my-3 d-flex justify-content-center">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-6 ex-precio"><del>$30</del></div>
+                    <div class="col-6 precio">$27</div>
+                  </div>
+                </a>
+                <button class="btn addCartButton mt-3">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <a href="./product.html">
+                  <img src="assets/images/productos-populares/productoPopular-mecanico4.png" alt="">
+                  <p class="card-title">Teclado Redragon K552 Kumara</p>
+                  <div class="estrellas my-3 d-flex justify-content-center">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-6 ex-precio"><del>$30</del></div>
+                    <div class="col-6 precio">$27</div>
+                  </div>
+                </a>
+                <button class="btn addCartButton mt-3">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <a href="./product.html">
+                  <img src="assets/images/productos-populares/productoPopular-mecanico5.png" alt="">
+                  <p class="card-title">Teclado HyperX Alloy Elite</p>
+                  <div class="estrellas my-3 d-flex justify-content-center">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-6 ex-precio"><del>$30</del></div>
+                    <div class="col-6 precio">$27</div>
+                  </div>
+                </a>
+                <button class="btn addCartButton mt-3">Añadir al carrito</button>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselPopularProducts-responsive" data-bs-slide="prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselPopularProducts-responsive" data-bs-slide="next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- publicidad extra -->
+    <section class="advertising my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="row">
+              <div class="col-12">
+                <img src="assets/images/advertising/1.png" alt="" width="100%" height="100%">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <img src="assets/images/advertising/2.png" alt="" width="100%" height="100%">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="assets/images/advertising/5.png" alt="" width="100%" height="100%">
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="row">
+              <div class="col-12">
+                <img src="assets/images/advertising/3.png" alt="" width="100%" height="100%">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <img src="assets/images/advertising/4.png" alt="" width="100%" height="100%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- otros productos -->
+    <section class="other-products">
+      <div class="container">
+        <div class="row">
+          <h4 class="text-center">Otros Productos</h4>
+          <div id="carouselOthersProducts" class="carousel slide" data-bs-touch="false" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner" >
+              <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="card">
+                            <img src="assets/images/productos-populares/productoPopular-mini1.png" alt="">
+                            <p class="card-title">Teclado Razer Tartarus Pro Gaming Keypad</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <img src="assets/images/productos-populares/productoPopular-oficina1.png" alt="">
+                            <p class="card-title">Teclado Genius KB125  Negro</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card">
+                          <img src="assets/images/productos-populares/productoPopular-mecanico3.png" alt="">
+                          <p class="card-title">Teclado Logitech G613 Wireless</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card">
+                          <img src="assets/images/productos-populares/productoPopular-mini2.png" alt="">
+                          <p class="card-title">Teclado OneHand Ligero k7 RGB</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card">
+                          <img src="assets/images/productos-populares/productoPopular-mecanico4.png" alt="">
+                          <p class="card-title">Teclado Redragon K552 Kumara</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card">
+                          <img src="assets/images/productos-populares/productoPopular-mecanico5.png" alt="">
+                          <p class="card-title">Teclado HyperX Alloy Elite</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+              <div class="carousel-item" >
+                <div class="row">
+                    <div class="col-2">
+                        <div class="card">
+                            <img src="assets/images/productos-populares/productoPopular-ergonomico1.png" alt="">
+                            <p class="card-title">Teclado Ergonómico Microsoft Multimedia</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <img src="assets/images/productos-populares/productoPopular-gamer1.png" alt="">
+                            <p class="card-title">Teclado Gamer Spectra Zk-p015</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <img src="assets/images/productos-populares/productoPopular-flex1.png" alt="">
+                            <p class="card-title">Black Silicone Portable Flexible Keyboard</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <img src="assets/images/productos-populares/productoPopular-ergonomico2.png" alt="">
+                            <p class="card-title">Kensington Teclado Ergonómico Inalámbrico</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                        </div>
+                    </div>     
+                    <div class="col-2">
+                      <div class="card">
+                          <img src="assets/images/productos-populares/productoPopular-mecanico1.png" alt="">
+                          <p class="card-title">Teclado Razer BlackWidow V3</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                      </div>
+                    </div> 
+                    <div class="col-2">
+                      <div class="card">
+                          <img src="assets/images/productos-populares/productoPopular-mecanico2.png" alt="">
+                          <p class="card-title">Teclado Gamer Halion Barbarian HA-K655</p>
+                            <div class="estrellas my-3 d-flex justify-content-center">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                              <i class="fa-regular fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-6 ex-precio"><del>$30</del></div>
+                              <div class="col-6 precio">$27</div>
+                            </div>
+                            <button class="btn addCartButton mt-3">Añadir al carrito</button>
+                      </div>
+                    </div> 
+                </div>
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselOthersProducts" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselOthersProducts" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- preguntas frecuentes -->
+    <section class="faq p-5 my-5" id="faq">
+      <div class="container">
+          <h3 class="text-center mb-4 pb-2 text-white fw-bold">Preguntas Frecuentes</h3>
+      
+          <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4">
+              <h6 class="mb-3 text-white"><i class="far fa-paper-plane text-white pe-2"></i> Hay garantia al comprar un teclado?</h6>
+              <p>
+              <strong><u>Definitivamente!</u></strong> Nos preocupamos porque cada cliente esté satisfecho, al adquirir uno de nuestros teclados 
+              te otorgamos 1 año de garantia
+              </p>
+          </div>
+      
+          <div class="col-md-6 col-lg-4 mb-4">
+              <h6 class="mb-3 text-white"><i class="fas fa-pen-alt text-white pe-2"></i>Las ofertas aplican para cualquier parte del Perú?</h6>
+              <p>
+              <strong><u>No,</u></strong> por el momento las ofertas son solo válidas para Lima,pero proximamente buscamos expandirnos
+              por el resto del Pais
+              </p>
+          </div>
+      
+          <div class="col-md-6 col-lg-4 mb-4">
+              <h6 class="mb-3 text-white"><i class="fas fa-user text-white pe-2"></i> Existe alguna restricción para el delivery gratis?
+              </h6>
+              <p>
+              Niguna, el delivery es gratis para todas las compras de al menos $30
+              </p>
+          </div>
+      
+          <div class="col-md-6 col-lg-4 mb-4">
+              <h6 class="mb-3 text-white"><i class="fas fa-rocket text-white pe-2"></i> Cuantas veces puede una persona aplicar a una oferta?
+              </h6>
+              <p>
+              Las ofertas son solo válidas a una por persona.
+              </p>
+          </div>
+      
+          <div class="col-md-6 col-lg-4 mb-4">
+              <h6 class="mb-3 text-white"><i class="fas fa-home text-white pe-2"></i> Hay alguna oferta especial si es que compro teclados al por mayor?
+              </h6>
+              <p>Actualmente no contamos con una oferta para esos casos, pero pronto habrá novedades.</p>
+          </div>
+      
+          <div class="col-md-6 col-lg-4 mb-4">
+              <h6 class="mb-3 text-white"><i class="fas fa-book-open text-white pe-2"></i> Los teclados son de buena calidad?</h6>
+              <p>Por supuesto!, tenemos años de experiencia en el rubro entregando lo mejor en calidad para nuestros clientes</p>
+          </div>
+          </div>
+      </div>
+    </section>
+    <!-- formulario de contacto -->
+    <section class="contact my-5" id="contact">
+      <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5 justify-content-center">
+              <div class="col-lg-8 col-xl-6 text-center">
+                  <h2 class="mt-0">Ponte en contacto</h2>
+                  <hr class="divider" />
+                  <p class="text-muted mb-5">Déjanos tu correo y te mantendremos al tanto de todas nuestras ofertas!</p>
+              </div>
+          </div>
+          <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+              <div class="col-lg-6">
+                  <form id="contactForm" class="needs-validation" novalidate>
+                      <div class="form-floating mb-3">
+                          <input class="form-control" id="name" type="text" placeholder="asd" required/>
+                          <label for="name">Nombres</label>
+                          <div class="invalid-feedback">Un nombre es requerido.</div>
+                      </div>
+                      <div class="form-floating mb-3">
+                          <input class="form-control" id="email" type="email" placeholder="asd" required/>
+                          <label for="email">Email</label>
+                          <div class="invalid-feedback">Un email valido es requerido.</div>
+                      </div>
+                      <div class="form-floating mb-3">
+                          <input class="form-control" id="phone" type="tel" placeholder="asd" required/>
+                          <label for="phone">Teléfono</label>
+                          <div class="invalid-feedback">Un telefono es requerido.</div>
+                      </div>
+                      <div class="form-floating mb-3">
+                          <textarea class="form-control" id="message" type="text" placeholder="asd" style="height: 10rem" required></textarea>
+                          <label for="message">Mensaje</label>
+                          <div class="invalid-feedback" data-sb-feedback="message:required">Un mensaje es requerido.</div>
+                      </div>
+                      
+                      <div class="d-grid"><button class="btn btn-xl" id="submitButton" type="submit">Enviar</button></div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="py-5 mt-5">
+      <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - HappyBoard</div></div>
+    </footer>
+
+    
+
+
+
+
+  
+    <script src="script.js"></script>
+    <script src="validateForm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
